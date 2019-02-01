@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palmirani</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""/>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+<script src="Province_2018.geojson"></script>
+<script src="jsonmashup.js"></script>
+<script src="home.js"></script>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <h1>In vacanza col mio cane: Lombardia</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div id='map' style="height:600px; width:100%; border: 3px solid #fef6ff;"></div>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="mapfilter" id="btnMapFattorie" autocomplete="off" value="fattorie" checked> Fattorie
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="mapfilter" id="btnMapOperatori" autocomplete="off" value="operatori"> Operatori
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="mapfilter" id="btnMapFalde" autocomplete="off" value="falde"> Falde
+                    </label>
+                </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="col-lg-12">
+                <div class="pieChartContainer" style="position: relative;width: 100%;">
+                    <canvas id="faldeChart" class="chart"></canvas>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="polarChartContainer" style="position: relative;width: 100%;">
+                    <canvas id="fattorieChart" class="chart"></canvas>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="barChartContainer" style="position: relative;width: 100%;">
+                    <canvas id="operatoriChart" class="chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .chart {
+        display: block;
+        width: 100%;
+    }
+</style>
+</body>
+</html>
