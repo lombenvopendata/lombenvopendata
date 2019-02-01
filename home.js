@@ -152,6 +152,7 @@ $(document).ready(function(){
                 createFaldePieChart(provinciaSigla);
                 createFattoriePolarChart(provinciaSigla);
                 createOperatoriLineChart(provinciaSigla);
+                $('#provinciaSelezionata').html(provinceNomi[provinciaSigla]);
             }
         });
     }
@@ -198,7 +199,7 @@ $(document).ready(function(){
 
     function createFattoriePolarChart(provincia) {
         $('#fattorieChart').remove();
-        $('.pieChartContainer').append('<canvas id="fattorieChart" class="chart"></canvas>');
+        $('.polarChartContainer').append('<canvas id="fattorieChart" class="chart"></canvas>');
 
         var labelDictionary = {
             "fattorie_didattiche_servizi_asilo_nido": "Asilo nido",
@@ -255,7 +256,17 @@ $(document).ready(function(){
             data: datiPolar,
             type: 'polarArea',
             options: {
-                responsive: true
+                layout: {
+                    padding: {
+                        top: 5,
+                        bottom: 10
+                    }
+                },
+                responsive: true,
+                legend: {
+                    display: false,
+                    position: 'left'
+                }
             }
         });
     }
@@ -309,12 +320,28 @@ $(document).ready(function(){
             data: datiBar,
             type: 'bar',
             options: {
-                responsive: true
+                responsive: true,
+                legend : {
+                    display: false
+                },
+                scaleShowValues: true,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            autoSkip: false
+                        }
+                    }]
+                }
             }
         });
     }
 
-    var mymap = L.map('map').setView([45.707458, 9.930645], 8);
+    var mymap = L.map('map').setView([45.707458, 9.930645], 7.5);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,

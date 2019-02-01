@@ -20,42 +20,102 @@
 <script src="Province_2018.geojson"></script>
 <script src="jsonmashup.js"></script>
 <script src="home.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
 
 <body>
 
 <div class="container-fluid">
     <div class="row">
-        <h1>In vacanza col mio cane: Lombardia</h1>
+        
     </div>
     <div class="row">
         <div class="col-lg-4">
             <div id='map' style="height:600px; width:100%; border: 3px solid #fef6ff;"></div>
+            <div id="mapfilterContainer">
+                <p><i class="fas fa-info-circle"></i> Evidenzia le province rispetto a: </p>
+                <ul>
+                    <li>Densità di Fattorie Didattiche sul territorio</li>
+                    <li>Densità di Operatori Biologici sul territorio</li>
+                    <li>Densità del numero di fattori inquinanti oltre il limite di legge</li>
+                </ul>
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                        <input type="radio" name="mapfilter" id="btnMapFattorie" autocomplete="off" value="fattorie" checked> Fattorie
+                    <label class="btn btn-light active">
+                        <input type="radio" name="mapfilter" id="btnMapFattorie" autocomplete="off" value="fattorie" checked><span class="circleFattorie">○</span> Fattorie
                     </label>
-                    <label class="btn btn-secondary">
-                        <input type="radio" name="mapfilter" id="btnMapOperatori" autocomplete="off" value="operatori"> Operatori
+                    <label class="btn btn-light">
+                        <input type="radio" name="mapfilter" id="btnMapOperatori" autocomplete="off" value="operatori"><span class="circleOperatori">○</span> Operatori
                     </label>
-                    <label class="btn btn-secondary">
-                        <input type="radio" name="mapfilter" id="btnMapFalde" autocomplete="off" value="falde"> Falde
+                    <label class="btn btn-light">
+                        <input type="radio" name="mapfilter" id="btnMapFalde" autocomplete="off" value="falde"><span class="circleFalde">○</span> Inquinanti
                     </label>
                 </div>
+            </div>
         </div>
         <div class="col-lg-8">
-            <div class="col-lg-12">
-                <div class="pieChartContainer" style="position: relative;width: 100%;">
-                    <canvas id="faldeChart" class="chart"></canvas>
+            <h3>Provincia di <span id="provinciaSelezionata"></span></h3>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Acque Sotterranee</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Fattorie Didattiche</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Operatori Biologici</a>
                 </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="polarChartContainer" style="position: relative;width: 100%;">
-                    <canvas id="fattorieChart" class="chart"></canvas>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="pieChartContainer">
+                                <canvas id="faldeChart" class="chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-info-circle"></i> Informazioni sui dati rappresentati</h5>
+                                    <p class="card-text">I dati qui rappresentati si basano sui dati di analisi chimica delle acque sotterranee effettuate dall'<i>ARPA Lombardia</i> in punti di prelievo distribuiti ma raggruppati per provincia.
+                                        Il grafico mostra il rapporto che sussiste tra il numero di parametri inquinanti che sono nella norma, il numero di quelli che superano la soglia di attenzione, e il numero di parametri che superano il limite consentito dalla legge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="barChartContainer" style="position: relative;width: 100%;">
-                    <canvas id="operatoriChart" class="chart"></canvas>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="polarChartContainer">
+                                <canvas id="fattorieChart" class="chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-info-circle"></i> Informazioni sui dati rappresentati</h5>
+                                    <p class="card-text">I dati raffrontano i servizi offerti da una quantità di fattorie didattiche presenti nel territorio.
+                                        I dati sono ottenuti con la somma di fattorie didattiche per ciascun possibile servizio offerto disponibili nella provincia.
+                                        I suddetti servizi riguardano: specifiche tipologie di pubblico come quella degli studenti (Dall'Asilo fino alla Scuola secondaria di II Grado), dei Disabili, degli Anziani, degli Adulti; la possibilità di Pernottamento, Ristorazione, dell'organizzazione di Attività Sportive; l'essere una Azienda Bio o un punto vendita.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="barChartContainer">
+                                <canvas id="operatoriChart" class="chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-info-circle"></i> Informazioni sui dati rappresentati</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,9 +123,28 @@
 </div>
 
 <style>
-    .chart {
-        display: block;
-        width: 100%;
+    #mapfilterContainer {
+        border: solid black 1px;
+        border-radius: 4px;
+        padding: 10px;
+    }
+    .tab-content {
+        padding: 5px;
+        padding-top: 20px;
+    }
+
+    .circleFattorie{
+        color: #00661c;
+    }
+    .circleOperatori{
+        color: #c34d2e;
+    }
+    .circleFalde{
+        color: #0b7895;
+    }
+
+    .btn-group-toggle label {
+        display:block;
     }
 </style>
 </body>
