@@ -46,17 +46,45 @@
     </div>
 </nav>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row" style="margin-top: 10px;">
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3">LombEnv - OpenData</h1>
-                <p>Connettendo la qualità dell'ambiente e le aziende del territorio Lombardo</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Vai al Dataset </a></p>
+        <div class="col-md-6 offset-md-3">
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-3 titolone">LombEnv opendata</h1>
+                    <p>Connettendo la qualità dell'ambiente con i servizi e i prodotti offerti dal territorio lombardo</p>
+                    <p>
+                        <a class="btn btn-warning btn-lg" href="dataset.html" id="vaialdatasetBtn" role="button"><i class="fas fa-table"></i> Vai al Dataset</a>
+                        <a class="btn btn-warning btn-lg" href="visualization.html" role="button"><i class="fas fa-chart-bar"></i> Visualizzazione</a>
+                    </p>
+                </div>
+            </div>
+            <div class="introductionBody">
+                <h4>Introduzione</h4>
+                <hr>
+                <p>Lombenv Open Data nasce in seno al corso Open Access and Digital Ethics tenuto nel corso di Laurea Magistrale in Digital Humanities and Digital Knowledge dell' Università di Bologna.
+                    Al centro della filosofia open data, i dati ambientali costituiscono una fetta importante di quel bene pubblico che può contribuire, se reso disponibile, ad accrescere la consapevolezza e migliorare la vita quotidiana del cittadino. Inoltre, tra le sfide di questi anni, e degli anni a venire, i riflettori sono puntati sulla tematica ambiente in quanto una delle questioni più calde del XXI secolo. Infine, il dominio ambiente, risulta il piu consultato a livello nazionale <a href="https://www.europeandataportal.eu/sites/default/files/country-factsheet_italy_2017.pdf">(https://www.europeandataportal.eu/sites/default/files/country-factsheet_italy_2017.pdf)</a> il che suggerisce una particolare curiosità nella nostra nazione. Queste alcune tra le ragioni per cui si e scelto di sviluppare una risorsa che possa essere utilizzata. Il nome del progetto sta per Lombardia Environment, a riassumere il contesto di interesse generale dei temi sui quali esso si concentra.</p>
+                <h4>Scenario applicativo</h4>
+                <hr>
+                <p>LombEnv prende in esame diversi dati appartenenti agli ecosistemi di ambiente e agricoltura, dissimili per tipologia, allo scopo di fornire un’immagine di alcune caratteristiche del territorio lombardo. Nello specifico, LombEnv mira a rivolgere l’attenzione verso la qualità del territorio e del suo sfruttamento, toccando tematiche che vanno al di là dell’interesse regionale: LombEnv vuole, tramite l’empowerment e la sensibilizzazione del cittadino, creare valore allineandosi al blueprint dei punti 6 e 12 dei Sustainable Development Goals (SDGs): Clean Water and Sanitation e Responsible Consumption and Production.
+                    Il progetto quindi fornisce un servizio di interesse sociale ai cittadini, tramite la fornitura di informazioni relative ad alcuni aspetti di sfruttamento del territorio regionale. Allo scopo di  raggiungere questo obiettivo sono stati combinati l’elenco degli operatori biologici lombardi, l’elenco delle fattorie didattiche e indicazioni sullo stato delle falde acquifere registrate nei punti di rilevamento della regione. I risultati sono forniti in dato aperto sotto forma di una mappa esplorabile che permette agli utenti di costruire dei profili settoriali di sfruttamento del territorio delle 12 province lombarde, a partire dalle categorie sopra elencate.</p>
             </div>
         </div>
     </div>
 </div>
 
 </body>
+<style>
+    body {
+        color: #2d2a2d;
+    }
+    .titolone {
+        color: #0e983bad;
+    }
+
+    .jumbotron {
+        background-image: url('header.jpg');
+        background-size: cover;
+    }
+</style>
 </html>
