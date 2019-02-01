@@ -80,7 +80,7 @@ $(document).ready(function(){
         }
 
         return {
-            fillOpacity: 0.7,
+            fillOpacity: 0.5,
             color: colorVariable,
             fillColor: fillVariable
         }
