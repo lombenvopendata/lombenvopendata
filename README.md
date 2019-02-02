@@ -1,1 +1,12 @@
-# lombenvopendata
+#LombEnv Open Data
+
+##Introduzione
+Lombenv Open Data nasce in seno al corso Open Access and Digital Ethics tenuto nel corso di Laurea Magistrale in Digital Humanities and Digital Knowledge dell' Università di Bologna. Al centro della filosofia open data, i dati ambientali costituiscono una fetta importante di quel bene pubblico che può contribuire, se reso disponibile, ad accrescere la consapevolezza e migliorare la vita quotidiana del cittadino. Inoltre, tra le sfide di questi anni, e degli anni a venire, i riflettori sono puntati sulla tematica ambiente in quanto una delle questioni più calde del XXI secolo. Infine, il dominio ambiente, risulta il piu consultato a livello nazionale (https://www.europeandataportal.eu/sites/default/files/country-factsheet_italy_2017.pdf) il che suggerisce una particolare curiosità nella nostra nazione. Queste alcune tra le ragioni per cui si e scelto di sviluppare una risorsa che possa essere utilizzata. Il nome del progetto sta per Lombardia Environment, a riassumere il contesto di interesse generale dei temi sui quali esso si concentra.
+
+##Scenario applicativo
+LombEnv prende in esame diversi dati appartenenti agli ecosistemi di ambiente e agricoltura, dissimili per tipologia, allo scopo di fornire un’immagine di alcune caratteristiche del territorio lombardo. Nello specifico, LombEnv mira a rivolgere l’attenzione verso la qualità del territorio e del suo sfruttamento, toccando tematiche che vanno al di là dell’interesse regionale: LombEnv vuole, tramite l’empowerment e la sensibilizzazione del cittadino, creare valore allineandosi al blueprint dei punti 6 e 12 dei Sustainable Development Goals (SDGs): Clean Water and Sanitation e Responsible Consumption and Production. Il progetto quindi fornisce un servizio di interesse sociale ai cittadini, tramite la fornitura di informazioni relative ad alcuni aspetti di sfruttamento del territorio regionale. Allo scopo di raggiungere questo obiettivo sono stati combinati l’elenco degli operatori biologici lombardi, l’elenco delle fattorie didattiche e indicazioni sullo stato delle falde acquifere registrate nei punti di rilevamento della regione. I risultati sono forniti in dato aperto sotto forma di una mappa esplorabile che permette agli utenti di costruire dei profili settoriali di sfruttamento del territorio delle 12 province lombarde, a partire dalle categorie sopra elencate.
+
+---
+
+La documentazione completa è disponibile al seguente link:
+https://github.com/lombenvopendata/lombenvopendata/blob/master/documentation.md
