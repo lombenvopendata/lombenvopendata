@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LombEnv</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""/>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html"><b>LombEnv</b> Open Data</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Il Progetto <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="visualization.html">Visualizzazione</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-md-8 offset-md-2">
+            <br>
+            <h1>Catalogo - LombEnv Open Data</h1>
+            <div class="table-responsive-md" style="margin-top: 30px;">
+                <table class="table table-striped">
+                    <tbody>
+                    <tr>
+                        <th scope="row">Titolo</th>
+                        <td>Catalogo del progetto LombEnv Open Data</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Descrizione</th>
+                        <td>(Lombardia Environment Open Data)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URI</th>
+                        <td><a href="https://github.com/lombenvopendata/lombenvopendata/tree/master/resources/dataset">https://github.com/lombenvopendata/lombenvopendata/tree/master/resources/dataset</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Editore</th>
+                        <td>LombEnv Open Data Project Team</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lingua</th>
+                        <td>Italiano</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Data ultima modifica</th>
+                        <td>2019-02-01</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Data di rilascio</th>
+                        <td>2019-02-01</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Formato della data</th>
+                        <td>ISO 8601</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Homepage</th>
+                        <td><a href="https://lombenvopendata.github.io/lombenvopendata">https://lombenvopendata.github.io/lombenvopendata</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URI del Dataset LombEnv Open Data</th>
+                        <td><a href="dataset.html">https://lombenvopendata.github.io/lombenvopendata/dataset.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URL di download</th>
+                        <td><a href="https://lombenvopendata.github.io/lombenvopendata/lombenvopendata.zip">https://lombenvopendata.github.io/lombenvopendata/lombenvopendata.zip</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<footer class="footer" style="height:80px; line-height: 20px !important;">
+    <div class="container">
+        <span class="text-muted" style="margin-top: 15px; display:block;">This website is licensed under Italian Open Data License v2.0</span>
+        <span class="text-muted" style="margin-top: 15px; display:block;">I dati forniti non devono in nessun modo essere utilizzati per identificare gli interessati</span>
+    </div>
+</footer>
+
+</body>
+<style>
+    body {
+        color: #2d2a2d;
+    }
+    .titolone {
+        color: #cea500;
+    }
+
+    .jumbotron {
+        background-image: url('header.jpg');
+        background-size: cover;
+    }
+
+    .introductionBody {
+        text-align: justify !important;
+    }
+</style>
+</html>
