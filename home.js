@@ -341,7 +341,7 @@ $(document).ready(function(){
         });
     }
 
-    var mymap = L.map('map').setView([45.707458, 9.930645], 7.5);
+    var mymap = L.map('map').setView([45.707458, 9.930645], 7);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
