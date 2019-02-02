@@ -660,141 +660,37 @@ machine-readable^[[b]](#cmnt2)^.
 Ogni campo del dataset viene opportunamente spiegato da apposita
 legenda.
 
-+--------------------------+--------------------------+--------------------------+
-| n.                       | CAMPO                    | DESCRIZIONE              |
-+--------------------------+--------------------------+--------------------------+
-| 1.                       | provincia                | la provincia di          |
-|                          |                          | pertinenza dei dati      |
-+--------------------------+--------------------------+--------------------------+
-| 2.                       | operatori\_biologici     | totale operatori         |
-|                          |                          | biologici per provincia  |
-+--------------------------+--------------------------+--------------------------+
-| 3.                       | operatori\_biologici\_pr | totale degli operatori   |
-|                          | oduzione\_vegetale       | biologici per provincia  |
-|                          |                          | che svolgono attività di |
-|                          |                          | tipo produzione vegetale |
-+--------------------------+--------------------------+--------------------------+
-| 4.                       | operatori\_biologici\_pr | totale degli operatori   |
-|                          | oduzione\_zootecnica     | biologici per provincia  |
-|                          |                          | che svolgono attività di |
-|                          |                          | tipo produzione          |
-|                          |                          | zootecnica               |
-+--------------------------+--------------------------+--------------------------+
-| 5.                       | operatori\_biologici\_im | totale degli operatori   |
-|                          | portatore                | biologici per provincia  |
-|                          |                          | riferibili alla          |
-|                          |                          | tipologia di importatore |
-+--------------------------+--------------------------+--------------------------+
-| 6.                       | operatori\_biologici\_es | totale degli operatori   |
-|                          | portatore                | biologici per provincia  |
-|                          |                          | riferibili alla          |
-|                          |                          | tipologia di esportatore |
-+--------------------------+--------------------------+--------------------------+
-| 7.                       | operatori\_biologici\_ti | totale degli operatori   |
-|                          | pologia\_non\_specificat | biologici per provincia  |
-|                          | a                        | dei quali la tipologia   |
-|                          |                          | non e specificata        |
-+--------------------------+--------------------------+--------------------------+
-| 8.                       | operatori\_biologici\_pr | totale degli operatori   |
-|                          | oduttori                 | biologici per provincia  |
-|                          |                          | riferibili alla          |
-|                          |                          | tipologia di produttori  |
-+--------------------------+--------------------------+--------------------------+
-| 9.                       | operatori\_biologici\_pr | totale degli operatori   |
-|                          | eparatori                | biologici per provincia  |
-|                          |                          | riferibili alla          |
-|                          |                          | tipologia di preparatori |
-+--------------------------+--------------------------+--------------------------+
-| 10.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_asilo\_nido       | provincia che            |
-|                          |                          | organizzano attività     |
-|                          |                          | educative  rivolte ad    |
-|                          |                          | asili nido               |
-+--------------------------+--------------------------+--------------------------+
-| 11.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_scuola\_infanzia  | provincia che            |
-|                          |                          | organizzano attività     |
-|                          |                          | educative rivolte alla   |
-|                          |                          | scuola dell’infanzia     |
-+--------------------------+--------------------------+--------------------------+
-| 12.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_scuola\_primaria  | provincia che            |
-|                          |                          | organizzano attività     |
-|                          |                          | educative rivolte alla   |
-|                          |                          | scuola primaria          |
-+--------------------------+--------------------------+--------------------------+
-| 13.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_scuola\_secondari | provincia che            |
-|                          | a\_i\_grado              | organizzano attività     |
-|                          |                          | educative  rivolte alla  |
-|                          |                          | scuola secondaria di     |
-|                          |                          | primo grado              |
-+--------------------------+--------------------------+--------------------------+
-| 14.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_scuola\_secondari | provincia che            |
-|                          | a\_ii\_grado             | organizzano attività     |
-|                          |                          | educative rivolte alla   |
-|                          |                          | scuola secondaria di     |
-|                          |                          | secondo grado            |
-+--------------------------+--------------------------+--------------------------+
-| 15.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_                  | provincia che            |
-|                          | adulti                   | organizzano attività     |
-|                          |                          | educative rivolte a      |
-|                          |                          | persone adulte           |
-+--------------------------+--------------------------+--------------------------+
-| 16.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_disabili          | provincia che            |
-|                          |                          | organizzano attività     |
-|                          |                          | educative rivolte a      |
-|                          |                          | persone disabili         |
-+--------------------------+--------------------------+--------------------------+
-| 17.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_anziani           | provincia che            |
-|                          |                          | organizzano attività     |
-|                          |                          | educative rivolte a      |
-|                          |                          | persone anziane          |
-+--------------------------+--------------------------+--------------------------+
-| 18.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_ristorazione      | provincia che forniscono |
-|                          |                          | servizi di ristorazione  |
-+--------------------------+--------------------------+--------------------------+
-| 19.                      | fattori\_                | fattorie didattiche per  |
-|                          | didattiche\_servizi\_att | provincia che forniscono |
-|                          | ività\_sportive          | servizi connessi ad      |
-|                          |                          | attività sportive        |
-+--------------------------+--------------------------+--------------------------+
-| 20                       | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_                  | provincia che forniscono |
-|                          | pernottamento            | servizi di pernottamento |
-+--------------------------+--------------------------+--------------------------+
-| 21.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_punto\_vendita    | provincia provviste di   |
-|                          |                          | punto vendita            |
-+--------------------------+--------------------------+--------------------------+
-| 22.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_azienda\_bio      | provincia riconosciute   |
-|                          |                          | come aziende biologiche  |
-+--------------------------+--------------------------+--------------------------+
-| 23.                      | fattorie\_didattiche\_se | fattorie didattiche per  |
-|                          | rvizi\_accessibilità\_di | provincia che forniscono |
-|                          | sabili                   | servizi di accessibilità |
-|                          |                          | a persone disabili       |
-+--------------------------+--------------------------+--------------------------+
-| 24.                      | acque\_sotterranee\_punt |                          |
-|                          | i\_prelievo              |                          |
-+--------------------------+--------------------------+--------------------------+
-| 25.                      | acque\_sotterranee\_para | citare legge, citare     |
-|                          | metri\_sopra\_limite\_le | limite                   |
-|                          | gge                      |                          |
-+--------------------------+--------------------------+--------------------------+
-| 26.                      | acque\_sotterranee\_para | ‘’ ‘’                    |
-|                          | metri\_sopra\_limite\_at |                          |
-|                          | tenzione                 |                          |
-+--------------------------+--------------------------+--------------------------+
-| 27.                      | acque\_sotterranee\_para | ‘’ ‘’                    |
-|                          | metri\_nella\_norma      |                          |
-+--------------------------+--------------------------+--------------------------+
+||||
+|--- |--- |--- |
+|n.|CAMPO|DESCRIZIONE|
+|1.|provincia|la provincia di pertinenza dei dati|
+|2.|operatori_biologici|totale operatori biologici per provincia|
+|3.|operatori_biologici_produzione_vegetale|totale degli operatori biologici per provincia che svolgono attività di tipo produzione vegetale|
+|4.|operatori_biologici_produzione_zootecnica|totale degli operatori biologici per provincia che svolgono attività di tipo produzione zootecnica|
+|5.|operatori_biologici_importatore|totale degli operatori biologici per provincia riferibili alla tipologia di importatore|
+|6.|operatori_biologici_esportatore|totale degli operatori biologici per provincia riferibili alla tipologia di esportatore|
+|7.|operatori_biologici_tipologia_non_specificata|totale degli operatori biologici per provincia dei quali la tipologia non e specificata|
+|8.|operatori_biologici_produttori|totale degli operatori biologici per provincia riferibili alla tipologia di produttori|
+|9.|operatori_biologici_preparatori|totale degli operatori biologici per provincia riferibili alla tipologia di preparatori|
+|10.|fattorie_didattiche_servizi_asilo_nido|fattorie didattiche per provincia che organizzano attività educative  rivolte ad asili nido|
+|11.|fattorie_didattiche_servizi_scuola_infanzia|fattorie didattiche per provincia che organizzano attività educative rivolte alla scuola dell’infanzia|
+|12.|fattorie_didattiche_servizi_scuola_primaria|fattorie didattiche per provincia che organizzano attività educative rivolte alla scuola primaria|
+|13.|fattorie_didattiche_servizi_scuola_secondaria_i_grado|fattorie didattiche per provincia che organizzano attività educative  rivolte alla scuola secondaria di primo grado|
+|14.|fattorie_didattiche_servizi_scuola_secondaria_ii_grado|fattorie didattiche per provincia che organizzano attività educative rivolte alla scuola secondaria di secondo grado|
+|15.|fattorie_didattiche_servizi_ adulti|fattorie didattiche per provincia che organizzano attività educative rivolte a persone adulte|
+|16.|fattorie_didattiche_servizi_disabili|fattorie didattiche per provincia che organizzano attività educative rivolte a persone disabili|
+|17.|fattorie_didattiche_servizi_anziani|fattorie didattiche per provincia che organizzano attività educative rivolte a persone anziane|
+|18.|fattorie_didattiche_servizi_ristorazione|fattorie didattiche per provincia che forniscono servizi di ristorazione|
+|19.|fattori_ didattiche_servizi_attività_sportive|fattorie didattiche per provincia che forniscono servizi connessi ad attività sportive|
+|20|fattorie_didattiche_servizi_ pernottamento|fattorie didattiche per provincia che forniscono servizi di pernottamento|
+|21.|fattorie_didattiche_servizi_punto_vendita|fattorie didattiche per provincia provviste di punto vendita|
+|22.|fattorie_didattiche_servizi_azienda_bio|fattorie didattiche per provincia riconosciute come aziende biologiche|
+|23.|fattorie_didattiche_servizi_accessibilità_disabili|fattorie didattiche per provincia che forniscono servizi di accessibilità a persone disabili|
+|24.|acque_sotterranee_punti_prelievo||
+|25.|acque_sotterranee_parametri_sopra_limite_legge|citare legge, citare limite|
+|26.|acque_sotterranee_parametri_sopra_limite_attenzione|‘’ ‘’|
+|27.|acque_sotterranee_parametri_nella_norma|‘’ ‘’|
+
 
 URI:
 [http://lombenvopendata.github.io/lombenvopendata/resources/dataset/lombenvopendata](https://www.google.com/url?q=http://lombenvopendata.github.io/lombenvopendata/resources/dataset/lombenvopendata.csv&sa=D&ust=1549069778127000)
