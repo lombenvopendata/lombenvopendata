@@ -2,6 +2,10 @@
 
 # LombEnv Open Data - Documentazione
 
+Elena Domenicucci
+Remo Grillo
+Caterina Morelli
+
 ## 1. Introduzione  
   
   LombEnv Open Data nasce in seno al corso Open Access and Digital Ethics tenuto nel corso di Laurea Magistrale in Digital Humanities and Digital Knowledge dell' Università di Bologna.    
